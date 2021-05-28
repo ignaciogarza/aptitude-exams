@@ -19,6 +19,12 @@ body, html {
     padding: 1em;
     margin-bottom: 1em;
 }
+.mainDescriptionBorderGreenLight {
+    border:3px solid green;
+    border-radius: 3px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
 
 .mainDescription ul {
     margin: 1em;
