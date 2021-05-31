@@ -94,3 +94,26 @@ form input[type="radio"] {
     text-align: right;
     border-right: 3px solid green;
 }
+
+.questionFrame {
+    margin: 7em auto;
+}
+
+.buttonSendForm {
+    text-align: center;
+}
+
+
+form button[type="submit"] {
+    background-color: blue;
+    border: 0;
+    padding: 0.5em 1em;
+    color:white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.2em;
+}
+
+form button[type="submit"]:hover {
+    transform: scale(1.1);
+}

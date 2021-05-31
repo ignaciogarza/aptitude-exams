@@ -1,6 +1,15 @@
 
+const buttonEndTest = document.getElementById("submitTest");
+buttonEndTest.addEventListener("click", evaluateTest);
 
-const inputs = document.getElementsByTagName("input");
 
-const form = document.getElementById("form");
+function evaluateTest(e){
+    e.preventDefault();
+    const [...userAnswers ] =  e.path[2];
+    console.log(userAnswers);
+    console.log(userAnswers[0].checked);
+    console.log(userAnswers[1].checked);
+}
+
+
 
