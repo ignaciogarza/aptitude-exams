@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap");
 
+* {
+    box-sizing: content-box;
+}
+
 body, html {
     font-family: "Montserrat", sans-serif;
 }
@@ -57,22 +61,11 @@ body, html {
 
 
 
-.individualQuestion {
-    width: 80%;
-    max-width: 600px;
-    margin: 1em auto;
-    border: 3px solid green;
-    display: flex;
-    flex-direction: row;
-}
 
-.individualQuestion h3 {
-    margin: 0;
-    padding: 0;
-    flex-grow: 1;
+form label {
+    display: inline-block;
+    vertical-align: middle;
 }
-
-.individualQuestion .questionOption{
-    flex-grow: 2;
-    background: red;
+form input[type="radio"] {
+    margin: 1em;
 }
