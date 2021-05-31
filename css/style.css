@@ -17,6 +17,16 @@ body, html {
 
 }
 
+.container h1 {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+.container h4 {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
 .mainDescriptionBorderGreen {
     border:8px solid green;
     border-radius: 3px;
@@ -116,4 +126,15 @@ form button[type="submit"] {
 
 form button[type="submit"]:hover {
     transform: scale(1.1);
+}
+
+.coverImage {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 1em auto;
+}
+
+.coverImage img {
+    width: 100%;
 }
