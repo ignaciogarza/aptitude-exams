@@ -59,13 +59,38 @@ body, html {
     padding-top: 0.5em;
 }
 
-
-
-
 form label {
     display: inline-block;
     vertical-align: middle;
 }
+
 form input[type="radio"] {
     margin: 1em;
+}
+
+.individualQuestion {
+    display: grid;
+    grid-template-columns: 10% 45% 45% ;
+    border: 3px solid green;
+    position: relative;
+    overflow: hidden;
+}
+
+.individualQuestion h3 {
+    background-color: green;
+    color: white;
+    height: 100%;
+    margin: 0;
+    padding-top: 1em;
+    text-align: center;
+
+}
+
+.questionOption {
+    padding: 0.5em;
+    }
+
+.questionOption.textRightAlign {
+    text-align: right;
+    border-right: 3px solid green;
 }
