@@ -1,0 +1,75 @@
+Autonomía
+1b - userAnswers[1].checked
+8b - userAnswers[15].checked
+10a - userAnswers[18].checked
+14a - userAnswers[26].checked
+15b - userAnswers[29].checked
+18a - userAnswers[34].checked
+28b - userAnswers[55].checked
+
+Demostración de habilidaded
+1a - userAnswers[0].checked
+5b - userAnswers[9].checked
+9a - userAnswers[16].checked
+13a - userAnswers[24].checked
+19b - userAnswers[37].checked
+21b - userAnswers[41].checked
+24a - userAnswers[46].checked
+
+
+Remuneración 
+3a - userAnswers[4].checked
+6b - userAnswers[11].checked
+12a - userAnswers[22].checked
+16b - userAnswers[31].checked
+21a - userAnswers[40].checked
+22b - userAnswers[43].checked
+28a - userAnswers[54].checked
+
+
+Estabilidad 
+2b userAnswers[3].checked]
+4a userAnswers[6].checked
+14b userAnswers[27].checked
+16a userAnswers[30].checked
+20b userAnswers[39].checked
+23a userAnswers[44].checked
+24b userAnswers[47].checked
+
+Reconocimiento 
+4b userAnswers[7].checked
+6a userAnswers[10].checked
+7b userAnswers[13].checked
+10b userAnswers[19].checked
+17a userAnswers[32].checked
+19a  serAnswers[36].checked
+26b  userAnswers[51].checked
+
+Altruismo 
+9b userAnswers[17].checked
+11a userAnswers[20].checked
+12b userAnswers[23].checked
+15a userAnswers[28].checked
+20a userAnswers[38].checked
+25b userAnswers[49].checked
+26a userAnswers[50].checked
+
+Creatividad 
+2a userAnswers[2].checked
+3b userAnswers[5].checked
+8a userAnswers[14].checked
+11b userAnswers[21].checked
+13b userAnswers[25].checked
+17b userAnswers[33].checked
+27a userAnswers[52].checked
+
+Autodesarrollo
+5a  userAnswers[8].checked
+7a userAnswers[12].checked
+18b userAnswers[35].checked
+22a userAnswers[40].checked
+23b userAnswers[45].checked
+25a userAnswers[48].checked
+27b userAnswers[53].checked
+
+

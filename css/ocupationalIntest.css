@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap");
+
+* {
+    box-sizing: content-box;
+}
+
+body, html {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+form label {
+    display: block;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 0.5em;
+    margin: 0 auto;
+}
+
+form input[type="radio"] {
+    display: none;
+}
+
+form input:checked + label {
+    background:#f6893f;
+    color:#fff;
+    font-weight: bold;
+    border: 1px solid #f6893f;
+  }
+
+
+form button[type="submit"] {
+    background-color: #f6893f;
+    border: 0;
+    padding: 0.5em 1em;
+    color:white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+form button[type="submit"]:hover {
+    transform: scale(1.1);
+}
+
+
+.container {
+    max-width: 800px;
+    padding: 1em;
+    margin: 1em auto;
+    width: 100%;
+    font-size: 16px;
+
+}
+
+.container h1 {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+.container h4 {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+.mainDescriptionBorderOrange {
+    border:8px solid #f6893f;
+    border-radius: 3px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+
+.individualQuestion {
+    display: grid;
+    grid-template-columns: 10% 45% 45% ;
+   
+}
+
+.buttonSendForm {
+    text-align: center;
+}
+
+.questionsInterest h2 {
+    background-color: #f6893f;
+    color: white;
+    padding: 1em 0.5em;
+    border-radius: 10px;
+    text-shadow: 1px 2px 3px rgb(58, 57, 57);
+}
+
+.individualQuestion {
+    display: grid;
+    grid-template-columns: 40px 50% 10% 10% 10% 10%;
+    margin: 2em auto;
+    border-bottom: 1px solid #f6893f;
+    padding-bottom: 1em;
+}
+
+.individualQuestion .qNumber {
+    text-align: center;
+    color: #f6893f;
+}
+
+
+.individualQuestion .qDescription {
+    padding: 0 1em;
+}
+
+
+.individualQuestion .qRadio {
+    text-align: center;
+    vertical-align: top;    
+}
+
+.individualQuestion .qRadio span {
+    font-size: 13px;
+}
+
+
+.individualQuestion .qRadio .numberRadio {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 0.5em;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
