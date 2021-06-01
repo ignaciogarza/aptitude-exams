@@ -17,6 +17,7 @@ form label {
     border-radius: 50%;
     padding: 0.5em;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 form input[type="radio"] {
@@ -95,10 +96,10 @@ form button[type="submit"]:hover {
 .individualQuestion {
     display: grid;
     grid-template-columns: 40px 50% 10% 10% 10% 10%;
-    margin: 2em auto;
+    margin: 4em auto;
     border-bottom: 1px solid #f6893f;
-    padding-bottom: 1em;
-}
+    padding: 1em 0;
+    }
 
 .individualQuestion .qNumber {
     text-align: center;
