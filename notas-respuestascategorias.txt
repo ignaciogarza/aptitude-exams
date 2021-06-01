@@ -1,0 +1,60 @@
+Autonomía
+1b - userAnswers[1].checked
+8b - userAnswers[15].checked
+10a - userAnswers[18].checked
+14a - userAnswers[26].checked
+15b - userAnswers[29].checked
+18a - userAnswers[34].checked
+28b - userAnswers[55].checked
+
+Demostración de habilidaded
+1a -
+5b -
+9a -
+13a -
+19b -
+21b -
+24a -
+
+
+Remuneración 
+3a
+6b
+12a
+16b
+21a
+22b
+28a
+
+
+Estabilidad 
+2b 
+4a
+14b
+16a
+20b
+23a
+24b
+
+Reconocimiento 
+4b
+6a
+7b
+10b
+17a
+19a
+26b
+
+Altruismo 
+9b
+11a
+12b
+15a
+20a
+25b
+26a
+
+Creatividad - 7 (2a, 3b, 8a, 11b, 13b, 17b, 27a)
+Desarrollo personal y profesional (autodesarrollo) - 7 (5a, 7a, 18b, 22a, 23b, 25a, 27b )
+
+

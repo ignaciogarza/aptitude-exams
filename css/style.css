@@ -28,13 +28,13 @@ body, html {
 }
 
 .mainDescriptionBorderGreen {
-    border:8px solid green;
+    border:8px solid #6eaa52;
     border-radius: 3px;
     padding: 1em;
     margin-bottom: 1em;
 }
 .mainDescriptionBorderGreenLight {
-    border:3px solid green;
+    border:3px solid #00b050
     border-radius: 3px;
     padding: 1em;
     margin-bottom: 1em;
@@ -53,18 +53,18 @@ body, html {
     margin-bottom: 1.5em;
 }
 .examTopic h3 {
-    background-color: lime;
+    background-color: #e2efd9;
     width: 230px;
-    border-left: 3px solid green;
-    border-top: 3px solid green;
-    border-right: 3px solid green;
+    border-left: 3px solid #00b050;
+    border-top: 3px solid #00b050;
+    border-right: 3px solid #00b050;
     border-bottom: 0;
     padding: 0.5em;
     margin-bottom: 0;
 }
 
 .examTopic p {
-    border-top: 3px solid green;
+    border-top: 3px solid #00b050;
     margin-top: 0;
     padding-top: 0.5em;
 }
@@ -81,13 +81,13 @@ form input[type="radio"] {
 .individualQuestion {
     display: grid;
     grid-template-columns: 10% 45% 45% ;
-    border: 3px solid green;
+    border: 3px solid #00b050;
     position: relative;
     overflow: hidden;
 }
 
 .individualQuestion h3 {
-    background-color: green;
+    background-color: #00b050;
     color: white;
     height: 100%;
     margin: 0;
@@ -102,7 +102,7 @@ form input[type="radio"] {
 
 .questionOption.textRightAlign {
     text-align: right;
-    border-right: 3px solid green;
+    border-right: 3px solid #00b050;
 }
 
 .questionFrame {

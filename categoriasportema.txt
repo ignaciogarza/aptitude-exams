@@ -1,19 +1,14 @@
-
-const buttonEndTest = document.getElementById("submitTest");
-buttonEndTest.addEventListener("click", evaluateTest);
-
-
-function evaluateTest(e){
-    e.preventDefault();
-    const {...userAnswers } =  e.path[2];
-
-  
-
-    calculateCategories(userAnswers)
+Autonomía - 7 ( 1b, 8b, 10a, 14a, 15b, 18a, 28b)
+Demostración de habilidades - 7 (1a, 5b, 9a, 13a, 19b, 21b, 24a)
+Remuneración - 7 (3a, 6b, 12a, 16b, 21a, 22b, 28a )
+Estabilidad - 7 (2b, 4a, 14b, 16a, 20b, 23a, 24b)
+Reconocimiento - 7 (4b, 6a, 7b, 10b, 17a, 19a, 26b, )
+Altruismo - 7 ( 9b, 11a, 12b, 15a, 20a, 25b, 26a )
+Creatividad - 7 (2a, 3b, 8a, 11b, 13b, 17b, 27a)
+Desarrollo personal y profesional (autodesarrollo) - 7 (5a, 7a, 18b, 22a, 23b, 25a, 27b )
 
 
-    const arrResp = [ 
-        [userAnswers[0].checked, userAnswers[1].checked], 
+[userAnswers[0].checked, userAnswers[1].checked], 
         [userAnswers[2].checked, userAnswers[3].checked], 
         [userAnswers[4].checked, userAnswers[5].checked], 
         [userAnswers[6].checked, userAnswers[7].checked], 
@@ -41,33 +36,3 @@ function evaluateTest(e){
         [userAnswers[50].checked, userAnswers[51].checked], 
         [userAnswers[52].checked, userAnswers[53].checked], 
         [userAnswers[54].checked, userAnswers[55].checked], 
-    ]
-
-    
-   
-    console.table(arrResp);
-
-
-}
-
-function calculateCategories(categories) {
-    console.log(categories);
-
-   
-
-    let catAutonomia = 0, 
-    catDemostracion = 0, 
-    catRemuneracion = 0, 
-    catEstabilidad = 0, 
-    catReconocimiento = 0, 
-    catAltruismo = 0, 
-    catCreatividad = 0, 
-    catAutodesarrollo =0;
-
-    if() {
-        catAutonomia++;
-    }
-
-
-}
-
