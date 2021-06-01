@@ -34,7 +34,7 @@ body, html {
     margin-bottom: 1em;
 }
 .mainDescriptionBorderGreenLight {
-    border:3px solid #00b050
+    border:3px solid #00b050;
     border-radius: 3px;
     padding: 1em;
     margin-bottom: 1em;
