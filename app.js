@@ -9,7 +9,7 @@ function evaluateTest(e){
 
   
 
-    calculateCategories(userAnswers)
+    const categoriesTotal = calculateCategories(userAnswers)
 
 
     const arrResp = [ 
@@ -43,15 +43,17 @@ function evaluateTest(e){
         [userAnswers[54].checked, userAnswers[55].checked], 
     ]
 
-    
-   
+    console.log("");
+    console.log("");
+    console.log("USER SELECTIONS") 
+    console.log("Column 0 is left option, column 1 is right option")
     console.table(arrResp);
+   
 
 
 }
 
-function calculateCategories(categories) {
-    console.log(categories);
+function calculateCategories(categories = []) {
 
    
 
@@ -64,10 +66,142 @@ function calculateCategories(categories) {
     catCreatividad = 0, 
     catAutodesarrollo =0;
 
-    if() {
-        catAutonomia++;
-    }
 
+    const arrAutonomia = [
+        categories[1].checked,
+        categories[15].checked,
+        categories[18].checked,
+        categories[26].checked,
+        categories[29].checked,
+        categories[34].checked, 
+        categories[55].checked
+    ]
+
+    const arrDemostracion = [
+        categories[0].checked,
+        categories[9].checked,
+        categories[16].checked,
+        categories[24].checked,
+        categories[37].checked,
+        categories[41].checked,
+        categories[46].checked
+    ]
+
+    const arrRemuneracion = [
+        categories[4].checked,
+        categories[11].checked,
+        categories[22].checked,
+        categories[31].checked,
+        categories[40].checked,
+        categories[43].checked,
+        categories[54].checked
+    ]
+
+    const arrEstabilidad = [
+        categories[3].checked,
+        categories[6].checked,
+        categories[27].checked,
+        categories[30].checked,
+        categories[39].checked,
+        categories[44].checked,
+        categories[47].checked
+    ]
+
+    const arrReconocimiento = [
+        categories[7].checked,
+        categories[10].checked,
+        categories[13].checked,
+        categories[19].checked,
+        categories[32].checked,
+        categories[36].checked,
+        categories[51].checked,
+    ]
+
+    const arrAltruismo = [
+        categories[17].checked,
+        categories[20].checked,
+        categories[23].checked,
+        categories[28].checked,
+        categories[38].checked,
+        categories[49].checked,
+        categories[50].checked
+    ]
+
+    const arrCreatividad = [
+        categories[2].checked,
+        categories[5].checked,
+        categories[14].checked,
+        categories[21].checked,
+        categories[25].checked,
+        categories[33].checked,
+        categories[52].checked
+    ]
+
+    const arrAutodesarollo = [
+        categories[8].checked,
+        categories[12].checked,
+        categories[35].checked,
+        categories[42].checked,
+        categories[45].checked,
+        categories[48].checked,
+        categories[53].checked
+    ]
+
+    for(respuesta in arrAutonomia) {
+        if(arrAutonomia[respuesta] === true) {
+            catAutonomia++;   
+        }
+    }
+    for(respuesta in arrDemostracion) {
+        if(arrDemostracion[respuesta] === true) {
+            catDemostracion++;   
+        }
+    }
+    for(respuesta in arrRemuneracion) {
+        if(arrRemuneracion[respuesta] === true) {
+            catRemuneracion++;   
+        }
+    }
+    for(respuesta in arrEstabilidad) {
+        if(arrEstabilidad[respuesta] === true) {
+            catEstabilidad++;   
+        }
+    }
+    for(respuesta in arrReconocimiento) {
+        if(arrReconocimiento[respuesta] === true) {
+            catReconocimiento++;   
+        }
+    }
+    for(respuesta in arrAltruismo) {
+        if(arrAltruismo[respuesta] === true) {
+            catAltruismo++;   
+        }
+    }
+    for(respuesta in arrCreatividad) {
+        if(arrCreatividad[respuesta] === true) {
+            catCreatividad++;   
+        }
+    }
+    for(respuesta in arrAutodesarollo) {
+        if(arrAutodesarollo[respuesta] === true) {
+            catAutodesarrollo++;   
+        }
+    }
+ 
+
+  
+
+    console.log("Autonomia: ", catAutonomia);
+    console.log("Demostración: ", catDemostracion);
+    console.log("Remuneración: ", catRemuneracion);
+    console.log("Estabilidad: ", catEstabilidad);
+    console.log("Reconocimiento:", catReconocimiento, );
+    console.log("Altruismo: ", catAltruismo);
+    console.log("Creatividad: ", catCreatividad);
+    console.log("Autodesarrollo: ", catAutodesarrollo);
+    
+
+    return [catAutonomia, catDemostracion, catRemuneracion, catEstabilidad, catReconocimiento, catAltruismo, catCreatividad, catAutodesarrollo]
 
 }
 
