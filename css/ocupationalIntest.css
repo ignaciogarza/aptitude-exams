@@ -101,6 +101,11 @@ form button[type="submit"]:hover {
     padding: 1em 0;
     }
 
+.individualQuestion.rowLayout {
+    display: grid;
+    grid-template-columns: 40px 50%;
+}
+
 .individualQuestion .qNumber {
     text-align: center;
     color: #f6893f;
@@ -111,6 +116,9 @@ form button[type="submit"]:hover {
     padding: 0 1em;
 }
 
+.individualQuestion.blackBorder {
+    border-bottom: 1px solid black;
+}
 
 .individualQuestion .qRadio {
     text-align: center;
@@ -131,7 +139,31 @@ form button[type="submit"]:hover {
     margin: 0 auto;
 }
 
+.individualQuestion.rowLayout .qRadio {
+    display: block;
+    margin: 1em;
+}
 
+.individualQuestion.rowLayout label {
+    width: 100%;
+    height: auto;
+    border: 0;
+    border-radius: 0;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+.circleDecorationNumeral {
+    background-color: #f6893f;
+    color:white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    text-align: center;
+    padding: 0.5em;
+    
+}
 
 
 
