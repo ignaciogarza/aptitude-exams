@@ -14,7 +14,7 @@ function evaluateTest(e){
 
     // avoids the no selection error (0 checked inputs)
     if(selectedOptions.length > 0) {
-
+        console.log(selectedOptions);
         // console.log(selectedOptions)
         for(selected in selectedOptions) {
             if(typeof selectedOptions[selected].id !== "undefined") {
