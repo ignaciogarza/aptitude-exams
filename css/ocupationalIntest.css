@@ -111,6 +111,11 @@ form button[type="submit"]:hover {
     grid-template-columns: 25% 25% 25% 25%;
 }
 
+.individualQuestion.sevenBlocks {
+    display: grid;
+    grid-template-columns: 40px 30% 10% 10% 10% 10% 10%;
+}
+
 .individualQuestion.fourBlocks {
     width: 100%;
     height: auto;
