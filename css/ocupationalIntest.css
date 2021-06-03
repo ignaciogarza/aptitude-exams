@@ -106,6 +106,27 @@ form button[type="submit"]:hover {
     grid-template-columns: 40px 50%;
 }
 
+.individualQuestion.fourBlocks {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.individualQuestion.fourBlocks {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5em;
+}
+
+.individualQuestion.fourBlocks label {
+    width: auto;
+    height: auto;
+    margin: 1em 0.5em;
+    border: 0;
+    text-align: left;
+    border-radius: 0;
+}
+
+
 .individualQuestion .qNumber {
     text-align: center;
     color: #f6893f;
