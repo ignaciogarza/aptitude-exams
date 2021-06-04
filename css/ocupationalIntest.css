@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap");
 
+:root {
+    --orange-middle-school:#f6893f;
+    --green-high-school:#47bfad;
+}
+
 * {
     box-sizing: content-box;
 }
@@ -25,15 +30,19 @@ form input[type="radio"] {
 }
 
 form input:checked + label {
-    background:#f6893f;
+    background:var(--orange-middle-school);
     color:#fff;
     font-weight: bold;
-    border: 1px solid #f6893f;
+    border: 1px solid var(--orange-middle-school);
   }
 
+form.greenTone input:checked + label {
+    background:#47bfad;
+    border: 1px solid #47bfad;
+}
 
 form button[type="submit"] {
-    background-color: #f6893f;
+    background-color: var(--orange-middle-school);
     border: 0;
     padding: 0.5em 1em;
     color:white;
@@ -41,6 +50,11 @@ form button[type="submit"] {
     border-radius: 4px;
     font-size: 1.2em;
     font-weight: bold;
+}
+
+form.greenTone button[type="submit"] {
+    background-color: #47bfad;
+   
 }
 
 form button[type="submit"]:hover {
@@ -68,7 +82,13 @@ form button[type="submit"]:hover {
 }
 
 .mainDescriptionBorderOrange {
-    border:8px solid #f6893f;
+    border:8px solid var(--orange-middle-school);
+    border-radius: 3px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.mainDescriptionBorderGreen {
+    border:8px solid var(--green-high-school);
     border-radius: 3px;
     padding: 1em;
     margin-bottom: 1em;
@@ -86,20 +106,28 @@ form button[type="submit"]:hover {
 }
 
 .questionsInterest h2 {
-    background-color: #f6893f;
+    background-color: var(--orange-middle-school);
     color: white;
     padding: 1em 0.5em;
     border-radius: 10px;
     text-shadow: 1px 2px 3px rgb(58, 57, 57);
 }
 
+.questionsInterest h2.GreenBackgroundArea {
+    background-color: var(--green-high-school);
+}
+
 .individualQuestion {
     display: grid;
     grid-template-columns: 40px 50% 10% 10% 10% 10%;
     margin: 4em auto;
-    border-bottom: 1px solid #f6893f;
+    border-bottom: 1px solid var(--orange-middle-school);
     padding: 1em 0;
-    }
+}
+
+.individualQuestion.greenArea {
+    border-bottom: 1px solid var(--green-high-school);
+}
 
 .individualQuestion.rowLayout {
     display: grid;
@@ -134,8 +162,13 @@ form button[type="submit"]:hover {
 
 .individualQuestion .qNumber {
     text-align: center;
-    color: #f6893f;
+    color: var(--orange-middle-school);
 }
+
+.individualQuestion.greenArea .qNumber {
+    color: var(--green-high-school);
+}
+
 
 
 .individualQuestion .qDescription {
@@ -180,7 +213,7 @@ form button[type="submit"]:hover {
 }
 
 .circleDecorationNumeral {
-    background-color: #f6893f;
+    background-color: var(--orange-middle-school);
     color:white;
     border-radius: 50%;
     width: 20px;
@@ -191,6 +224,9 @@ form button[type="submit"]:hover {
     
 }
 
+.greenBackground {
+    background-color: var(--green-high-school);
+}
 
 
 
