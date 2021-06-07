@@ -31,6 +31,8 @@ form label.descriptionLabel {
     font-size: 12px;
 }
 
+form label.descriptionLabel.left {}
+
 form input[type="radio"] {
     display: none;
 }
@@ -117,6 +119,8 @@ form button[type="submit"]:hover {
     margin: 0 auto;
 
 }
+
+
 
 .individualQuestion .qRadio p {
     margin: 0;
