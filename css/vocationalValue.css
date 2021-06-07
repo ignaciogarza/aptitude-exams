@@ -27,11 +27,10 @@ form label.descriptionLabel {
     border: 0;
     width: auto;
     border-radius: 0;
-    border: 1px solid red;
-    font-size: 12px;
+    font-size: 11px;
+    border-top: 1px solid black;
 }
 
-form label.descriptionLabel.left {}
 
 form input[type="radio"] {
     display: none;
@@ -89,6 +88,34 @@ form button[type="submit"]:hover {
     text-align: center;
 }
 
+.sectionHeader {
+    border: 6px solid var(--orange-vocational-theme);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 80px 250px 450px;
+    margin-bottom: 2em;
+}
+
+.questionsInterest .sectionHeader h2 {
+    background-color: white;
+    text-align: center;
+    font-size: 40px;
+    margin: 0 auto;
+    padding: 0.2em;
+    color: black;
+    text-shadow: none;
+}
+
+.questionsInterest .sectionHeader h3 {
+    padding: 0.2em;
+    margin: 0.5em auto;
+}
+
+.individualQuestionTitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .questionsInterest h2 {
     background-color: var(--orange-vocational-theme);
     color: white;
@@ -100,14 +127,13 @@ form button[type="submit"]:hover {
 .individualQuestion {
     display: grid;
     grid-template-columns: 14% 14% 14% 14% 14% 14% 14% ;
-    margin: 4em auto 0 auto;
+    margin: 0em auto 5em auto;
     padding: 1em 0;
 }
 
 .individualQuestion .qRadio {
     text-align: center;
     vertical-align: top;
-    border: 1px solid red;    
 }
 
 .individualQuestion .qRadio span {
@@ -119,8 +145,6 @@ form button[type="submit"]:hover {
     margin: 0 auto;
 
 }
-
-
 
 .individualQuestion .qRadio p {
     margin: 0;
