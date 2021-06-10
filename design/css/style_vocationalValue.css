@@ -97,7 +97,7 @@ form input:checked + label.optionSeven {
 
 
 form button[type="submit"] {
-    background-color: var(--orange-vocational-theme);
+    background-color: var(--blue-question-number);
     border: 0;
     padding: 0.5em 1em;
     color:white;
