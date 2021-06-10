@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap");
+
+:root {
+    --orange-vocational-theme:#f6ac00;
+    --blue-question-number:#014c74;
+    --grey-question-text:  #5d5d5d;
+    --grey-question-options: #cfcece; 
+    --red-first-option: #fe2224;
+    --orange-second-option: #fd7423;
+    --light-orange-third-option:#feb324;
+    --yellow-fourth-option:#fcf022;
+    --lime-fifth-option:#d5e52d;
+    --light-green-sixth-option:#b4d934;
+    --green-seventh-option:#7cc841;
+
+}
+
+* {
+    box-sizing: content-box;
+}
+
+body, html {
+    font-family: "Montserrat", sans-serif;
+}
+
+form label {
+    display: block;
+    width: auto;
+    height: 20px;
+    padding-bottom: 0.5em;
+    margin: 0 auto;
+    cursor: pointer;
+    color:var(--grey-question-options);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+form label.descriptionLabel {
+    border: 0;
+    width: auto;
+    border-radius: 0;
+    font-size: 11px;
+    color: var(--grey-question-text);
+    text-align: left;
+    margin-top: 0.5em;
+    padding-top: 1em;
+}
+
+
+form input[type="radio"] {
+    display: none;
+}
+
+
+form input:checked + label.optionOne {
+    color:#fff;
+    background: var(--red-first-option);
+    border: 0;
+  }
+
+form input:checked + label.optionTwo {
+    color:#fff;
+    background: var(--orange-second-option);
+    border: 0;
+  }
+
+form input:checked + label.optionThree {
+    color:#fff;
+    background: var(--light-orange-third-option);
+    border: 0;
+  }
+
+
+form input:checked + label.optionFour {
+    color:#fff;
+    background: var(--yellow-fourth-option);
+    border: 0;
+  }
+
+form input:checked + label.optionFive {
+    color:#fff;
+    background: var(--lime-fifth-option);
+    border: 0;
+  }
+
+form input:checked + label.optionSix {
+    color:#fff;
+    background: var(--light-green-sixth-option);
+    border: 0;
+  }
+
+form input:checked + label.optionSeven {
+    color:#fff;
+    background: var(--green-seventh-option);
+    border: 0;
+  }
+
+
+form button[type="submit"] {
+    background-color: var(--orange-vocational-theme);
+    border: 0;
+    padding: 0.5em 1em;
+    color:white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+form button[type="submit"]:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    max-width: 800px;
+    padding: 1em;
+    margin: 1em auto;
+    width: 100%;
+    font-size: 16px;
+}
+
+.container h1 {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+.container h4 {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+.mainDescriptionBorderOrange {
+    border:8px solid var(--orange-vocational-theme);
+    border-radius: 3px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.buttonSendForm {
+    text-align: center;
+}
+
+.sectionHeader {
+    display: grid;
+    grid-template-columns: 120px 250px 450px;
+    margin-bottom: 5em;
+}
+
+.questionsInterest .sectionHeader h2 {
+    background-color: white;
+    text-align: center;
+    font-size: 80px;
+    margin: 0 auto;
+    padding:0;
+    color: black;
+    text-shadow: none;
+    color:var(--blue-question-number);
+}
+
+.questionsInterest .sectionHeader h3 {
+    padding: 0.2em;
+    margin: 0.5em auto 0 auto;
+    color: var(--grey-question-text);
+}
+.questionsInterest .sectionHeader p {
+    padding: 0;
+    margin: 0;
+    color: var(--grey-question-text);
+    
+}
+
+.questionsInterest .sectionHeader .descriptionHeader {
+    margin-top: 1em;
+}
+
+.individualQuestionTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--grey-question-text);
+    margin-bottom: 2em;
+    
+}
+
+.individualQuestionTitle span {
+    color: var(--blue-question-number);
+    font-size: 30px;
+    margin-right: 0.5em;
+}
+
+.individualQuestionTitle span::before {
+    font-family: "Font Awesome 5 Free"; font-weight: 900; 
+    margin-right: 0.2em;
+    content: "\f0da";
+}
+
+.questionsInterest h2 {
+    background-color: var(--orange-vocational-theme);
+    color: white;
+    padding: 1em 0.5em;
+    border-radius: 10px;
+    text-shadow: 1px 2px 3px rgb(58, 57, 57);
+}
+
+.individualQuestion {
+    display: grid;
+    grid-template-columns: 30px 14% 14% 14% 14% 14% 14% 14% 30px;
+    margin: 0em auto 5em auto;
+    padding: 1em 0;
+    
+}
+
+.individualQuestion .iconsMinusMore {
+    position: relative;
+}
+
+.individualQuestion .iconsMinusMore .fas {
+    position:absolute;
+    top: 45px;
+    font-size: 20px;
+}
+
+.individualQuestion .iconsMinusMore .fa-plus {
+    color: var(--green-seventh-option);
+    left: 6px;
+}
+
+.individualQuestion .iconsMinusMore .fa-minus {
+    color: var(--red-first-option);
+    right: 6px;
+}
+
+
+.borderGrey {
+    border-bottom: 5px dashed var(--grey-question-options);
+    margin: 2em auto;
+}
+
+.individualQuestion .qRadio {
+    text-align: center;
+    vertical-align: top;
+    margin: 0.1em;
+}
+
+.individualQuestion .qRadio .optionFrame {
+    width: 100%;
+    height: 12px;
+    margin-top: 0.2em;
+}
+
+.individualQuestion .qRadio .optionFrame.optionOne {
+    background-color: var(--red-first-option);
+}
+
+.individualQuestion .qRadio .optionFrame.optionTwo {
+    background-color: var(--orange-second-option);
+}
+
+.individualQuestion .qRadio .optionFrame.optionThree {
+    background-color: var(--light-orange-third-option);
+}
+
+.individualQuestion .qRadio .optionFrame.optionFour {
+    background-color: var(--yellow-fourth-option);
+}
+
+.individualQuestion .qRadio .optionFrame.optionFive {
+    background-color: var(--lime-fifth-option);
+}
+
+.individualQuestion .qRadio .optionFrame.optionSix {
+    background-color: var(--light-green-sixth-option);
+}
+
+.individualQuestion .qRadio .optionFrame.optionSeven {
+    background-color: var(--green-seventh-option);
+}
+
+
+
+
+
+
+
+
+.individualQuestion .qRadio span {
+    font-size: 13px;
+    height: 30px;
+    width: 3px;
+    background-color: black;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.individualQuestion .qRadio p {
+    margin: 0;
+}
+
+
