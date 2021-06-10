@@ -202,7 +202,7 @@ form button[type="submit"]:hover {
 
 .individualQuestion {
     display: grid;
-    grid-template-columns: 30px 14% 14% 14% 14% 14% 14% 14% 30px;
+    grid-template-columns: 30px 13% 14% 13% 13% 13% 14% 13% 30px;
     margin: 0em auto 5em auto;
     padding: 1em 0;
     
@@ -231,7 +231,7 @@ form button[type="submit"]:hover {
 
 .borderGrey {
     border-bottom: 5px dashed var(--grey-question-options);
-    margin: 2em auto;
+    margin: 2em auto 4em auto;
 }
 
 .individualQuestion .qRadio {
