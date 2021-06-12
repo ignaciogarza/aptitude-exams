@@ -4,9 +4,841 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Valoracion Vocacional</title>
+    <link rel="stylesheet" href="./css/ocupationalValue.css">
 </head>
 <body>
-    
+
+    <main class="container mainDescription">
+
+        <div class="coverImage">
+            <img src="./img/aptitud_test_cover.jpg" alt="" srcset="">
+        </div>
+
+        <h1>Test de Orientación de Valores Ocupacionales</h1>
+        <h4>Inventario de Valores Ocupacionales     </h4>
+
+        <div class="mainDescriptionBorderGreen" >
+
+           
+             <ul>
+            <li>
+                Este test tiene como objetivo descubrir qué es lo que consideras más más importante respecto a tus deseos y valores relacionados con un trabajo.
+
+                </li>
+                <li>No hay un tiempo límite para el test. Responde pensando detenidamente.
+       
+                </li>
+                <li>
+                Marca todas las respuestas en la hoja de respuestas que se les ha proporcionado.
+            </li>
+        </ul>
+        </div>
+        <div class="mainDescriptionBorderGreen" >
+            <ul>
+                <li>
+                    A través de este test conocerás qué valores consideras importantes en la vida laboral.
+                </li>
+            </ul>
+        </div>
+        <div class="mainDescriptionBorderGreen" >
+            <ul>
+                <li>
+                    Lee detenidamente los siguientes valores laborales relacionados con un trabajo.
+                </li>
+            </ul>
+        </div>
+
+        <div class="examTopic" >
+            <h3>Demostración de habilidades</h3>
+            <p>Poder mostrar tus habilidades a través de tu trabajo.</p>
+        </div>
+        <div class="examTopic" >
+            <h3>Autonomía</h3>
+            <p>Poder decidir por ti mismo cuándo y cómo trabajar.</p>
+        </div>
+        <div class="examTopic" >
+            <h3>Remuneración</h3>
+            <p>Poder ganar mucho dinero con un trabajo.</p>
+        </div>
+        <div class="examTopic" >
+            <h3>Estabilidad</h3>
+            <p>Poder trabajar durante mucho tiempo en un trabajo.</p>
+        </div>
+        <div class="examTopic" > 
+            <h3>Reconocimiento</h3>
+            <p>Ser reconocido por los demás por el trabajo que realizas.</p>
+        </div>
+        <div class="examTopic" >
+            <h3>Altruismo</h3>
+            <p>Hacer algo que ayude a los demás.</p>
+        </div>
+        <div class="examTopic" >
+            <h3>Desarrollo personal y profesional</h3>
+            <p>Tener la oportunidad de aprender y desarrollarse a través de un trabajo.</p>
+        </div>
+        <div class="examTopic" >
+            <h3>Creatividad</h3>
+            <p>Poder idear y realizar cosas nuevas.</p>
+        </div>
+
+        <div class="mainDescriptionBorderGreenLight" >
+           
+            <ul>
+                <li>
+                    Marca qué valor es más importante para ti, como en el siguiente ejemplo
+                </li>
+            </ul>
+        </div>
+        <div class="mainDescriptionBorderGreenLight" >  
+            <h3>EJEMPLO</h3>
+            <ul>
+                <li>
+                    Piensa cuál de los 2 valores relacionados con el trabajo es más importante para ti. 
+                    <br>
+                    Si no estás seguro del significado del valor, lee la explicación del valor debajo de la pregunta.
+                </li>
+                <li>
+                    Si la "Autonomía" es más importante que la "Demostración de habilidades", marca con una (X) la opcion adecuada.
+                </li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="mainDescriptionBorderGreenLight" >
+           
+            <ul>
+                <li>
+                    Marca con una (X) el valor más importante para ti entre los 2 valores que aparecen cada punto.
+                </li>
+            </ul>
+        </div>
+
+        <div id="preguntasValoracion" class="preguntasValoracion">
+            <form id="form">
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>01</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ01">
+                                Demostración de habilidades 
+                            </label>
+                            <input type="radio" name="optionQ01" id="optionAQ01" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ01" id="optionBQ01" data-option="B" data-question="1">
+                            <label for="optionBQ01">
+                                Autonomía
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Demostración de habilidades: Poder mostrar tus habilidades a través de tu trabajo.
+                </p>
+                <p>
+                    ※ Autonomía: Poder decidir por tí mismo cuándo y cómo trabajar.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>02</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ02">
+                                Creatividad
+                            </label>
+                            <input type="radio" name="optionQ02" id="optionAQ02" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ02" id="optionBQ02" data-option="B" data-question="1">
+                            <label for="optionBQ02">
+                                Estabilidad
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Creatividad: Poder idear y realizar cosas nuevas.
+                </p>
+                <p>
+                    ※ Estabilidad: Poder trabajar durante mucho tiempo en un trabajo.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>03</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ03">
+                                Remuneración 
+                            </label>
+                            <input type="radio" name="optionQ03" id="optionAQ03" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ03" id="optionBQ03" data-option="B" data-question="1">
+                            <label for="optionBQ03">
+                                Creatividad
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Remuneración: Poder ganar mucho dinero con un trabajo.
+                </p>
+                <p>
+                    ※ Creatividad: Poder idear y realizar cosas nuevas.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>04</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ04">
+                                Estabilidad
+                            </label>
+                            <input type="radio" name="optionQ04" id="optionAQ04" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ04" id="optionBQ04" data-option="B" data-question="1">
+                            <label for="optionBQ04">
+                                Reconocimiento
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Estabilidad: Poder trabajar durante mucho tiempo en un trabajo
+                </p>
+                <p>
+                    ※ Reconocimiento: Ser reconocido por los demás por el trabajo que realizas. 
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>05</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ05">
+                                Autodesarrollo
+                            </label>
+                            <input type="radio" name="optionQ05" id="optionAQ05" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ05" id="optionBQ05" data-option="B" data-question="1">
+                            <label for="optionBQ05">
+                                Demostración de habilidades
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Autodesarrollo: Tener la oportunidad de aprender y desarrollarse a través de un trabajo.
+                </p>
+                <p>
+                    ※ Demostración de habilidades: Poder mostrar tus habilidades a través de tu trabajo.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>06</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ06">
+                                Reconocimiento
+                            </label>
+                            <input type="radio" name="optionQ06" id="optionAQ06" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ06" id="optionBQ06" data-option="B" data-question="1">
+                            <label for="optionBQ06">
+                                Remuneración
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Reconocimiento: Ser reconocido por los demás por el trabajo que realizas
+                </p>
+                <p>
+                    ※ Remuneración: Poder ganar mucho dinero con un trabajo.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>07</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ07">
+                                Autodesarrollo 
+                            </label>
+                            <input type="radio" name="optionQ07" id="optionAQ07" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ07" id="optionBQ07" data-option="B" data-question="1">
+                            <label for="optionBQ07">
+                                Reconocimiento
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Autodesarrollo: Tener la oportunidad de aprender y desarrollarse a través de un trabajo.
+                </p>
+                <p>
+                    ※ Reconocimiento: Ser reconocido por los demás por el trabajo que realizas.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>08</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ08">
+                                Creatividad
+                            </label>
+                            <input type="radio" name="optionQ08" id="optionAQ08" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ08" id="optionBQ08" data-option="B" data-question="1">
+                            <label for="optionBQ08">
+                                Autonomía
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Creatividad: Poder idear y realizar cosas nuevas.
+                </p>
+                <p>
+                    ※ Autonomía: Poder decidir por tí mismo cuándo y cómo trabajar
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>09</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ09">
+                                Demostración de habilidades 
+                            </label>
+                            <input type="radio" name="optionQ09" id="optionAQ09" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ09" id="optionBQ09" data-option="B" data-question="1">
+                            <label for="optionBQ09">
+                                Altruismo
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Demostración de habilidades: Poder mostrar tus habilidades a través de tu trabajo.
+                </p>
+                <p>
+                    ※ Altruismo: Hacer algo que ayude a los demás.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>10</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ10">
+                                Autonomía  
+                            </label>
+                            <input type="radio" name="optionQ10" id="optionAQ10" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ10" id="optionBQ10" data-option="B" data-question="1">
+                            <label for="optionBQ10">
+                                Reconocimiento
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Autonomía: Poder decidir por tí mismo cuándo y cómo trabajar.
+                </p>
+                <p>
+                    ※ Reconocimiento: Ser reconocido por los demás por el trabajo que realizas.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>11</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ11">
+                                Altruismo
+                            </label>
+                            <input type="radio" name="optionQ11" id="optionAQ11" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ11" id="optionBQ11" data-option="B" data-question="1">
+                            <label for="optionBQ11">
+                                Creatividad
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Altruismo: Hacer algo que ayude a los demás.
+                </p>
+                <p>
+                    ※ Creatividad: Poder idear y realizar cosas nuevas.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>12</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ12">
+                                Remuneración 
+                            </label>
+                            <input type="radio" name="optionQ12" id="optionAQ12" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ12" id="optionBQ12" data-option="B" data-question="1">
+                            <label for="optionBQ12">
+                                Altruismo
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Remuneración: Poder ganar mucho dinero con un trabajo.
+                </p>
+                <p>
+                    ※ Altruismo: Hacer algo que ayude a los demás.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>13</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ13">
+                                Demostración de habilidades
+                            </label>
+                            <input type="radio" name="optionQ13" id="optionAQ13" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ13" id="optionBQ13" data-option="B" data-question="1">
+                            <label for="optionBQ13">
+                                Creatividad
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Demostración de habilidades: Poder mostrar tus habilidades a través de tu trabajo.
+                </p>
+                <p>
+                    ※ Creatividad: Poder idear y realizar cosas nuevas.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>14</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ14">
+                                Autonomía  
+                            </label>
+                            <input type="radio" name="optionQ14" id="optionAQ14" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ14" id="optionBQ14" data-option="B" data-question="1">
+                            <label for="optionBQ14">
+                                Estabilidad
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Autonomía: Poder decidir por tí mismo cuándo y cómo trabajar.
+                </p>
+                <p>
+                    ※ Estabilidad: Poder trabajar durante mucho tiempo en un trabajo.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>15</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ15">
+                                Altruismo  
+                            </label>
+                            <input type="radio" name="optionQ15" id="optionAQ15" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ15" id="optionBQ15" data-option="B" data-question="1">
+                            <label for="optionBQ15">
+                                Autonomía
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Altruismo: Hacer algo que ayude a los demás.
+                </p>
+                <p>
+                    ※ Autonomía: Poder decidir por tí mismo cuándo y cómo trabajar.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>16</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ16">
+                                Estabilidad  
+                            </label>
+                            <input type="radio" name="optionQ16" id="optionAQ16" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ16" id="optionBQ16" data-option="B" data-question="1">
+                            <label for="optionBQ16">
+                                Remuneración
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Estabilidad: Poder trabajar durante mucho tiempo en un trabajo.
+                </p>
+                <p>
+                    ※ Autonomía: Poder decidir por tí mismo cuándo y cómo trabajar.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>17</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ17">
+                                Reconocimiento  
+                            </label>
+                            <input type="radio" name="optionQ17" id="optionAQ17" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ17" id="optionBQ17" data-option="B" data-question="1">
+                            <label for="optionBQ17">
+                                Creatividad
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Reconocimiento: Ser reconocido por los demás por el trabajo que realizas..
+                </p>
+                <p>
+                    ※ Creatividad: Poder idear y realizar cosas nuevas.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>18</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ18">
+                                Autonomía  
+                            </label>
+                            <input type="radio" name="optionQ18" id="optionAQ18" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ18" id="optionBQ18" data-option="B" data-question="1">
+                            <label for="optionBQ18">
+                                Autodesarrollo
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Autonomía: Poder decidir por tí mismo cuándo y cómo trabajar.
+                </p>
+                <p>
+                    ※ Autodesarrollo: Tener la oportunidad de aprender y desarrollarse a través de un trabajo.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>19</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ19">
+                                Reconocimiento  
+                            </label>
+                            <input type="radio" name="optionQ19" id="optionAQ19" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ19" id="optionBQ19" data-option="B" data-question="1">
+                            <label for="optionBQ19">
+                                Demostración de habilidades
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Reconocimiento: Ser reconocido por los demás por el trabajo que realizas.
+                </p>
+                <p>
+                    ※ Demostración de habilidades: Poder mostrar tus habilidades a través de tu trabajo.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>20</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ20">
+                                Altruismo  
+                            </label>
+                            <input type="radio" name="optionQ20" id="optionAQ20" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ20" id="optionBQ20" data-option="B" data-question="1">
+                            <label for="optionBQ20">
+                                Estabilidad
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Altruismo: Hacer algo que ayude a los demás.
+                </p>
+                <p>
+                    ※ Estabilidad: Poder trabajar durante mucho tiempo en un trabajo.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>21</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ21">
+                                Remuneración  
+                            </label>
+                            <input type="radio" name="optionQ21" id="optionAQ21" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ21" id="optionBQ21" data-option="B" data-question="1">
+                            <label for="optionBQ21">
+                                Demostración de habilidades
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Remuneración: Poder ganar mucho dinero con un trabajo.
+                </p>
+                <p>
+                    ※ Demostración de habilidades: Poder mostrar tus habilidades a través de tu trabajo.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>22</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ22">
+                                Autodesarrollo  
+                            </label>
+                            <input type="radio" name="optionQ22" id="optionAQ22" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ22" id="optionBQ22" data-option="B" data-question="1">
+                            <label for="optionBQ22">
+                                Remuneración
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Autodesarrollo: Tener la oportunidad de aprender y desarrollarse a través de un trabajo.
+                </p>
+                <p>
+                    ※ Remuneración: Poder ganar mucho dinero con un trabajo.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>23</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ23">
+                                Estabilidad  
+                            </label>
+                            <input type="radio" name="optionQ23" id="optionAQ23" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ23" id="optionBQ23" data-option="B" data-question="1">
+                            <label for="optionBQ23">
+                                Autodesarrollo
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Estabilidad: Poder trabajar durante mucho tiempo en un solo trabajo.
+                </p>
+                <p>
+                    ※ Autodesarrollo: Tener la oportunidad de aprender y desarrollarse a través de un trabajo.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>24</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ24">
+                                Demostración de habilidades
+                            </label>
+                            <input type="radio" name="optionQ24" id="optionAQ24" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ24" id="optionBQ24" data-option="B" data-question="1">
+                            <label for="optionBQ24">
+                                Estabilidad
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Demostración de habilidades: Poder mostrar tus habilidades a través de tu trabajo.
+                </p>
+                <p>
+                    ※ Estabilidad: Poder trabajar durante mucho tiempo en un trabajo.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>25</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ25">
+                                Autodesarrollo  
+                            </label>
+                            <input type="radio" name="optionQ25" id="optionAQ25" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ25" id="optionBQ25" data-option="B" data-question="1">
+                            <label for="optionBQ25">
+                                Altruismo
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Autodesarrollo: Tener la oportunidad de aprender y desarrollarse a través de un trabajo.
+                </p>
+                <p>
+                    ※ Altruismo: Hacer algo que ayude a los demás.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>26</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ26">
+                                Altruismo  
+                            </label>
+                            <input type="radio" name="optionQ26" id="optionAQ26" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ26" id="optionBQ26" data-option="B" data-question="1">
+                            <label for="optionBQ26">
+                                Reconocimiento
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Altruismo: Hacer algo que ayude a los demás.
+                </p>
+                <p>
+                    ※ Reconocimiento: Ser reconocido por los demás por el trabajo que realizas.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>27</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ27">
+                                Creatividad  
+                            </label>
+                            <input type="radio" name="optionQ27" id="optionAQ27" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ27" id="optionBQ27" data-option="B" data-question="1">
+                            <label for="optionBQ27">
+                                Autodesarrollo
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Creatividad: Poder idear y realizar cosas nuevas.
+                </p>
+                <p>
+                    ※ Autodesarrollo: Tener la oportunidad de aprender y desarrollarse a través de un trabajo.
+                </p>
+            </div>
+                <!-- individual question END-->
+                <!-- individual question -->
+                <div class="questionFrame">
+                    <div class="individualQuestion">
+                        <h3>28</h3>
+                        <div class="questionOption textRightAlign">
+                            <label for="optionAQ28">
+                                Remuneración  
+                            </label>
+                            <input type="radio" name="optionQ28" id="optionAQ28" data-option="A" data-question="1">
+                        </div>
+                        <div class="questionOption">
+                            <input type="radio" name="optionQ28" id="optionBQ28" data-option="B" data-question="1">
+                            <label for="optionBQ28">
+                                Autonomía
+                            </label>
+                        </div>
+                </div>
+                <p>
+                    ※ Remuneración: Poder ganar mucho dinero con un trabajo.
+                </p>
+                <p>
+                    ※ Autonomía: Poder decidir por tí mismo cuándo y cómo trabajar.
+                </p>
+            </div>
+            <div class="buttonSendForm">
+                <button type="submit" id="submitTest">Terminar</button>
+            </div>
+                <!-- individual question END-->
+            </form>
+        </div>
+       
+    </main>
+
+<br>    
+<br>    
+<br>    
+<br>    
+<br>    
+<br>    
+<br>    
+<br>    
+<br>    
+<br>    
+<br>    
+<br>    
+<br>    
+<br>    
+    <script src="./js/appOccupationalValue.js"></script>
 </body>
 </html>
+
