@@ -4,6 +4,12 @@
     box-sizing: content-box;
 }
 
+:root {
+    --gray--main-titles: #626262;
+    --blue-main-color: #004e74;
+    --green-selected-input: #8bbe57;
+}
+
 body, html {
     font-family: "Montserrat", sans-serif;
 }
@@ -20,93 +26,82 @@ body, html {
 .container h1 {
     margin-top: 2em;
     margin-bottom: 0;
+    color: var(--gray--main-titles);
 }
 
 .container h4 {
     margin-top: 0;
-    margin-bottom: 2em;
+    margin-bottom: 0.2em;
+    color: var(--gray--main-titles);
+    font-weight: 600;
 }
 
-.mainDescriptionBorderGreen {
-    border:8px solid #6eaa52;
-    border-radius: 3px;
-    padding: 1em;
-    margin-bottom: 1em;
-}
-.mainDescriptionBorderGreenLight {
-    border:3px solid #00b050;
-    border-radius: 3px;
-    padding: 1em;
-    margin-bottom: 1em;
-}
-
-.mainDescription ul {
-    margin: 1em;
-    padding: 0;
-}
-
-.mainDescription ul li {
-    margin-bottom: 1em;   
-}
-
-.examTopic {
-    margin-bottom: 1.5em;
-}
-.examTopic h3 {
-    background-color: #e2efd9;
-    width: 230px;
-    border-left: 3px solid #00b050;
-    border-top: 3px solid #00b050;
-    border-right: 3px solid #00b050;
-    border-bottom: 0;
-    padding: 0.5em;
-    margin-bottom: 0;
-}
-
-.examTopic p {
-    border-top: 3px solid #00b050;
-    margin-top: 0;
-    padding-top: 0.5em;
+.container p.descriptionText {
+    color:var(--blue-main-color);
 }
 
 form label {
     display: inline-block;
     vertical-align: middle;
+    width: 90%;
+    color: var(--gray--main-titles);
+}
+
+form label .circle {
+    width: 12px;
+    height: 12px;
+    border: 2px solid grey;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 8px;
+    margin-right: 10px;
+    text-align: center;
+    padding: 1px;
+}
+
+form label .labelDescription {
+    display: inline-block;
+    width: 90%;
+    vertical-align: top;
 }
 
 form input[type="radio"] {
-    margin: 1em;
+    display: none;
+    margin: 0.3em 1em;
+    color: red;
 }
+
+
+form input:checked + label .circle span {
+    background:var(--green-selected-input);
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+   
+    
+    
+  }
 
 .individualQuestion {
     display: grid;
-    grid-template-columns: 10% 45% 45% ;
-    border: 3px solid #00b050;
-    position: relative;
-    overflow: hidden;
+    grid-template-columns: 10% 90% ;
+   margin-bottom: 1em;
+   margin-top: 1em ;
+   
+
 }
 
-.individualQuestion h3 {
-    background-color: #00b050;
+.questionNumber {
+    background-color:var(--blue-main-color);
     color: white;
-    height: 100%;
-    margin: 0;
-    padding-top: 1em;
     text-align: center;
-
+    font-size: 25px;
 }
 
 .questionOption {
-    padding: 0.5em;
-    }
-
-.questionOption.textRightAlign {
-    text-align: right;
-    border-right: 3px solid #00b050;
-}
-
-.questionFrame {
-    margin: 7em auto;
+    padding: 0.5em 1em;
 }
 
 .buttonSendForm {
@@ -128,13 +123,3 @@ form button[type="submit"]:hover {
     transform: scale(1.1);
 }
 
-.coverImage {
-    display: block;
-    width: 100%;
-    max-width: 600px;
-    margin: 1em auto;
-}
-
-.coverImage img {
-    width: 100%;
-}
