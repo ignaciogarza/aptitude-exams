@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap");
+
+* {
+    box-sizing: content-box;
+}
+
+body, html {
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    padding: 1em;
+    margin: 1em auto;
+    width: 100%;
+    font-size: 16px;
+
+}
+
+.container h1 {
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+.container h4 {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+.mainDescriptionBorderGreen {
+    border:8px solid #6eaa52;
+    border-radius: 3px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.mainDescriptionBorderGreenLight {
+    border:3px solid #00b050;
+    border-radius: 3px;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.mainDescription ul {
+    margin: 1em;
+    padding: 0;
+}
+
+.mainDescription ul li {
+    margin-bottom: 1em;   
+}
+
+.examTopic {
+    margin-bottom: 1.5em;
+}
+.examTopic h3 {
+    background-color: #e2efd9;
+    width: 230px;
+    border-left: 3px solid #00b050;
+    border-top: 3px solid #00b050;
+    border-right: 3px solid #00b050;
+    border-bottom: 0;
+    padding: 0.5em;
+    margin-bottom: 0;
+}
+
+.examTopic p {
+    border-top: 3px solid #00b050;
+    margin-top: 0;
+    padding-top: 0.5em;
+}
+
+form label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+form input[type="radio"] {
+    margin: 1em;
+}
+
+.individualQuestion {
+    display: grid;
+    grid-template-columns: 10% 45% 45% ;
+    border: 3px solid #00b050;
+    position: relative;
+    overflow: hidden;
+}
+
+.individualQuestion h3 {
+    background-color: #00b050;
+    color: white;
+    height: 100%;
+    margin: 0;
+    padding-top: 1em;
+    text-align: center;
+
+}
+
+.questionOption {
+    padding: 0.5em;
+    }
+
+.questionOption.textRightAlign {
+    text-align: right;
+    border-right: 3px solid #00b050;
+}
+
+.questionFrame {
+    margin: 7em auto;
+}
+
+.buttonSendForm {
+    text-align: center;
+}
+
+
+form button[type="submit"] {
+    background-color: blue;
+    border: 0;
+    padding: 0.5em 1em;
+    color:white;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1.2em;
+}
+
+form button[type="submit"]:hover {
+    transform: scale(1.1);
+}
+
+.coverImage {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin: 1em auto;
+}
+
+.coverImage img {
+    width: 100%;
+}
