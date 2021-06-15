@@ -53,8 +53,8 @@ form label .circle {
     border: 2px solid grey;
     border-radius: 50%;
     display: inline-block;
-    vertical-align: top;
-    margin-top: 8px;
+    vertical-align: middle;
+  
     margin-right: 10px;
     text-align: center;
     padding: 1px;
