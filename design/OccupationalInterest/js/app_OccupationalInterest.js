@@ -1,4 +1,5 @@
 const buttonEndTest = document.getElementById("submitTest");
+const menuFaces = document.getElementById("menuFaces");
 buttonEndTest.addEventListener("click", evaluateTest);
 
 const selectedA = [];
@@ -59,4 +60,17 @@ function evaluateTest(e){
     console.log("Times selected: ",selectedD.length);
     console.log(selectedD);
     console.log(" ");
+}
+
+
+window.addEventListener("scroll", fixedFacesMenu);
+
+function fixedFacesMenu(){
+    console.log(window.scrollY);
+
+    if(window.scrollY > 380) {
+        menuFaces.classList.add("fixedTop");
+    } else if (window.scrollY < 380) {
+        menuFaces.classList.remove("fixedTop");
+    }
 }

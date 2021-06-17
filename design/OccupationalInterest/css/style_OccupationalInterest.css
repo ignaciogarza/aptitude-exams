@@ -6,8 +6,7 @@
     --grey-number-label: #cbcbcb;
     --blue-number-background: #044f79;
     --white-number-over-blue: #fff;
-    --orange-middle-school:#f6893f;
-    --green-high-school:#47bfad;
+   
 }
 
 * {
@@ -74,7 +73,7 @@ form .endButton {
     margin-top: 2em;
 }
 form button[type="submit"] {
-    background-color: var(--orange-middle-school);
+    background-color: var(--blue-number-background);
     border: 0;
     padding: 0.5em 1em;
     color:white;
@@ -85,10 +84,6 @@ form button[type="submit"] {
 
 }
 
-form.greenTone button[type="submit"] {
-    background-color: var(--blue-number-background);
-   
-}
 
 form button[type="submit"]:hover {
     transform: scale(1.1);
@@ -124,14 +119,58 @@ form button[type="submit"]:hover {
     margin-bottom: 2em;
 }
 
+
+.menuFaces {
+    width: 100%;
+    background-color: #f3f3f3;
+
+}
+
+.menuFaces.fixedTop {
+    position: fixed;
+    top: 0;
+}
+
+.menuFaces.fixedTop .facesDescription {
+    padding: 0.5em;
+}
+
+.facesDescription {
+    display: grid;
+    grid-template-columns: 10% 14% 10% 14% 10% 14% 10% 14%  ;
+    margin: auto;
+    padding: 1.5em;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--grey-number-label);
+    max-width: 800px;
+}
+
+
+
+.facesDescription div {
+    position: relative;
+}
+.facesDescription img {
+    display: block;
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+}
+
+.facesDescription p {
+    font-size: 14px;
+    font-weight: normal;
+    text-align: left;
+    color: var(--blue-number-background);
+    position: absolute;
+    bottom: 10px;
+
+}
+
 .mainDescriptionBorderOrange {
     border:8px solid var(--orange-middle-school);
-    border-radius: 3px;
-    padding: 1em;
-    margin-bottom: 1em;
-}
-.mainDescriptionBorderGreen {
-    border:8px solid var(--green-high-school);
     border-radius: 3px;
     padding: 1em;
     margin-bottom: 1em;
@@ -149,16 +188,14 @@ form button[type="submit"]:hover {
 }
 
 .questionsInterest h2 {
-    background-color: var(--orange-middle-school);
+    background-color: var(--blue-number-background);
     color: white;
     padding: 1em 0.5em;
     border-radius: 10px;
     text-shadow: 1px 2px 3px rgb(58, 57, 57);
 }
 
-.questionsInterest h2.GreenBackgroundArea {
-    background-color: var(--green-high-school);
-}
+
 
 .individualQuestion {
     display: grid;
@@ -171,35 +208,8 @@ form button[type="submit"]:hover {
     border: 2px dashed var(--grey-border-line);
 } 
 
-.individualQuestion.rowLayout {
-    display: grid;
-    grid-template-columns: 40px 50%;
-}
 
-.individualQuestion.fourBlocks {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-}
 
-.individualQuestion.sevenBlocks {
-    display: grid;
-    grid-template-columns: 40px 30% 10% 10% 10% 10% 10%;
-}
-
-.individualQuestion.fourBlocks {
-    width: 100%;
-    height: auto;
-    margin-bottom: 0.5em;
-}
-
-.individualQuestion.fourBlocks label {
-    width: auto;
-    height: auto;
-    margin: 1em 0.5em;
-    border: 0;
-    text-align: left;
-    border-radius: 0;
-}
 
 
 .individualQuestion .qNumber {
@@ -242,35 +252,6 @@ form button[type="submit"]:hover {
     margin: 0 auto;
 }
 
-.individualQuestion.rowLayout .qRadio {
-    display: block;
-    margin: 1em;
-}
-
-.individualQuestion.rowLayout label {
-    width: 100%;
-    height: auto;
-    border: 0;
-    border-radius: 0;
-    text-align: left;
-    border-bottom: 1px solid #ccc;
-}
-
-.circleDecorationNumeral {
-    background-color: var(--orange-middle-school);
-    color:white;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    text-align: center;
-    padding: 0.5em;
-    
-}
-
-.greenBackground {
-    background-color: var(--green-high-school);
-}
 
 
 
