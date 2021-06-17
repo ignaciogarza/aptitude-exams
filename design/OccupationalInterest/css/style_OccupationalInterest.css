@@ -69,12 +69,10 @@ form label.option4 {
     height:38px;
 }
 
-
-
-
-
-
-
+form .endButton {
+    text-align: right;
+    margin-top: 2em;
+}
 form button[type="submit"] {
     background-color: var(--orange-middle-school);
     border: 0;
@@ -84,10 +82,11 @@ form button[type="submit"] {
     border-radius: 4px;
     font-size: 1.2em;
     font-weight: bold;
+
 }
 
 form.greenTone button[type="submit"] {
-    background-color: #47bfad;
+    background-color: var(--blue-number-background);
    
 }
 
