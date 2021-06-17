@@ -3,6 +3,7 @@
 :root {
     --grey-title-text: #656565;
     --grey-border-line:#cbcbcb;
+    --grey-number-label: #cbcbcb;
     --blue-number-background: #044f79;
     --white-number-over-blue: #fff;
     --orange-middle-school:#f6893f;
@@ -20,32 +21,59 @@ body, html {
 
 form label {
     display: block;
-    border: 1px solid black;
-    width: 20px;
+    width: 38px;
     height: 20px;
-    border-radius: 50%;
-    padding: 0.5em;
+    border-radius: 0 0 15px 15px;
     margin: 0 auto;
     cursor: pointer;
-    background-image: url("../img/svg/1-face.svg");
-    background-size: contain; 
+    color: var(--grey-number-label);
+    font-weight: bold;
+    font-size: 18px;
+    background-position: center;
+    background-size: 30px 30px;
+    background-color: var(--white-number-over-blue);
+    background-repeat: no-repeat;
+    padding: 0.1em 0;
 }
+
+
 
 form input[type="radio"] {
     display: none;
 }
-
 form input:checked + label {
-    background:var(--orange-middle-school);
+    background:var(--blue-number-background);
     color:#fff;
     font-weight: bold;
-    border: 1px solid var(--orange-middle-school);
-  }
-
-form.greenTone input:checked + label {
-    background:#47bfad;
-    border: 1px solid #47bfad;
+    border-radius: 15px 15px 0 0;
 }
+
+form input:checked ~ label {
+    background-color: var(--blue-number-background);
+}
+
+form label.option1 {
+    background-image: url("../img/1-face.png"); 
+    height:38px;
+}
+form label.option2 {
+    background-image: url("../img/2-face.png");
+    height:38px;
+}
+form label.option3 {
+    background-image: url("../img/3-face.png");
+    height:38px; 
+}
+form label.option4 {
+    background-image: url("../img/4-face.png");
+    height:38px;
+}
+
+
+
+
+
+
 
 form button[type="submit"] {
     background-color: var(--orange-middle-school);
@@ -177,19 +205,12 @@ form button[type="submit"]:hover {
 
 .individualQuestion .qNumber {
     text-align: center;
-    color: var(--orange-middle-school);
-}
-
-.individualQuestion.greenArea .qNumber {
-    background-color: var(--blue-number-background);
     color: var(--white-number-over-blue);
-    width: 100%;
-    height: 100%;
-    font-size: 25px;
-    padding: 0.5em 0 0.2em 0;
+    background-color: var(--blue-number-background);
+    height: 50px;
+    padding-top: 14px;
+    font-size: 28px;
 }
-
-
 
 .individualQuestion .qDescription {
     padding: 1em 1em 0 1em;
@@ -207,8 +228,6 @@ form button[type="submit"]:hover {
     vertical-align: top;
        
 }
-
-
 
 .individualQuestion .qRadio span {
     font-size: 13px;
