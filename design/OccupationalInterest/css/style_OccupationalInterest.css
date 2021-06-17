@@ -212,7 +212,7 @@ form button[type="submit"]:hover {
 }
 
 .individualQuestion .qDescription {
-    padding: 1em 1em 0 1em;
+    padding: 1.7em 1em 0 1em;
     color: var(--grey-title-text);
     font-size: 14px;
     vertical-align: middle;
