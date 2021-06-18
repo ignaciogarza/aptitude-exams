@@ -15,6 +15,9 @@
 
 body, html {
     font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+
 }
 
 
@@ -93,21 +96,21 @@ form button[type="submit"]:hover {
 .container {
     max-width: 800px;
     padding: 1em;
-    margin: 1em auto;
+    margin: 0 auto; 
     width: 100%;
     font-size: 16px;
+    box-shadow: 5px 0px 99px 3px rgb(56 52 52 / 40%);
 
 }
 
 .container h1 {
-    margin-top: 2em;
-    margin-bottom: 0;
+    margin:2em 0 0 0.5em;
     color: var(--grey-title-text);
 }
 
 .container p {
     color: var(--grey-title-text);
-    margin: 0.3em;
+    margin: 0.3em 0 0 1em;
 }
 
 .container p strong {
@@ -123,12 +126,16 @@ form button[type="submit"]:hover {
 .menuFaces {
     width: 100%;
     background-color: #f3f3f3;
-
+    transition:ease-in-out 3s;
 }
 
 .menuFaces.fixedTop {
     position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
+    transition:ease-in-out 3s;
+   
 }
 
 .menuFaces.fixedTop .facesDescription {
@@ -185,6 +192,10 @@ form button[type="submit"]:hover {
 
 .buttonSendForm {
     text-align: center;
+}
+
+.questionsInterest {
+    padding: 1em;
 }
 
 .questionsInterest h2 {
@@ -256,3 +267,5 @@ form button[type="submit"]:hover {
 
 
 
+
+  
