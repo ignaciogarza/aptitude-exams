@@ -66,7 +66,6 @@ function evaluateTest(e){
 window.addEventListener("scroll", fixedFacesMenu);
 
 function fixedFacesMenu(){
-    console.log(window.scrollY);
 
     if(window.scrollY > 380) {
         menuFaces.classList.add("fixedTop");
@@ -74,3 +73,4 @@ function fixedFacesMenu(){
         menuFaces.classList.remove("fixedTop");
     }
 }
+
