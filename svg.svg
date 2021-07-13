@@ -1,3 +1,7 @@
-<svg viewbox="0 0 450 100"></svg>
-<!-- agregar un diseño de circulo-->
-<!-- agregar un icono que rote 90 grados -->
+<svg width="200px" height="70px" viewbox="0 0 200 70">
+<circle class="ball3" cx="45" cy="45" r="25"/>
+</svg>
+
+@keyframes second-animation {
+    
+}

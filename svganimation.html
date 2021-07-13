@@ -1,0 +1,28 @@
+<svg width="200px" height="70px" viewbox="0 0 200 70">
+<circle class="ball3" cx="45" cy="45" r="25"/>
+</svg>
+
+<style>
+
+.ball3 {
+    animation: second-animation 2s 2s 3 alternate ease-in-out forwards;
+}
+
+@keyframes second-animation {
+ 0% {
+     fill:blue;
+     transform:translateX(0);
+ }   
+
+ 50% {
+     fill:purple;
+     transform:translateX(50px);
+ }
+
+ 100% {
+     fill:red;
+     transform:translateX(100px);
+ }
+}
+
+</style>
